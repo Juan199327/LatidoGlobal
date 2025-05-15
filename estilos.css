@@ -1,37 +1,30 @@
+/* === ESTILOS GENERALES === */
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
-  color: white;
-  box-sizing: border-box; /* Asegura que padding y border no afecten el ancho */
+  background-color: #fff;
+  color: #000;
 }
 
+/* === HEADER === */
 .header-top {
   background-color: #a40000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px; /* Reduje el padding horizontal para pantallas más pequeñas */
+  padding: 20px 40px;
   flex-wrap: wrap;
 }
 
 .logo-img {
-  max-width: 100%; /* Permite que el logo se escale con el contenedor */
+  max-width: 600px;
   height: auto;
   display: block;
-  margin-bottom: 10px; /* Más espacio debajo del logo en móvil */
-}
-
-.evento-info {
-  text-align: right;
-  font-size: 1rem; /* Reduje un poco el tamaño de la fuente en general */
-}
-
-.evento-info strong {
-  color: white; /* El color ya es blanco por el body */
+  margin-bottom: 5px;
 }
 
 .subtitulo {
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin: 5px 0 0;
 }
 
@@ -39,6 +32,13 @@ body {
   font-weight: 300;
 }
 
+.evento-info {
+  text-align: right;
+  font-size: 1.1rem;
+  color: white;
+}
+
+/* === NAVBAR === */
 .navbar {
   background-color: #f7b500;
   text-align: center;
@@ -55,44 +55,45 @@ body {
 }
 
 .navbar li {
-  margin: 10px; /* Aumenté el margen para mejor espaciado en móvil */
+  margin: 0 15px;
 }
 
 .navbar a {
   text-decoration: none;
   color: #a40000;
   font-weight: bold;
-  padding: 8px 12px; /* Añadí padding para que los enlaces sean más fáciles de tocar */
-  border-radius: 5px; /* Añadí un pequeño border-radius */
 }
 
+/* === COUNTDOWN === */
 .countdown {
   background-size: cover;
   background-position: center;
-  padding: 80px 20px; /* Ajusté el padding vertical */
+  padding: 100px 20px;
   text-align: center;
+  color: white;
 }
 
 .countdown h2 {
-  font-size: 2.5rem; /* Reduje un poco el tamaño del título */
-  margin-bottom: 15px;
+  font-size: 3rem;
+  margin-bottom: 20px;
 }
 
 .countdown p {
-  font-size: 1.2rem; /* Reduje un poco el tamaño del párrafo */
+  font-size: 1.5rem;
 }
 
+/* === QUIENES SOMOS === */
 .quienes-somos {
   display: flex;
   flex-wrap: wrap;
-  padding: 40px 20px; /* Ajusté el padding */
+  padding: 60px 40px;
 }
 
 .contenido-izq, .contenido-der {
-  flex: 1 0 300px; /* Asegura un ancho mínimo y permite crecer */
-  box-sizing: border-box;
+  flex: 1;
+  min-width: 300px;
   padding: 20px;
-  margin-bottom: 20px; /* Espacio entre bloques cuando se apilan */
+  box-sizing: border-box;
 }
 
 .contenido-izq {
@@ -101,13 +102,13 @@ body {
 }
 
 .contenido-izq h2 {
-  font-size: 2rem; /* Reduje el tamaño del título */
-  margin-bottom: 15px;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
 .contenido-izq p {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
 .contenido-der {
@@ -120,46 +121,37 @@ body {
 
 .contenido-der h3 {
   color: #a40000;
-  font-size: 1.5rem; /* Reduje el tamaño del subtítulo */
+  font-size: 2rem;
   margin-top: 0;
-  margin-bottom: 10px;
 }
 
 .contenido-der p {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
+/* === PROGRAMACIÓN === */
 .programacion {
   text-align: center;
-  padding: 40px 20px; /* Ajusté el padding */
+  padding: 60px 40px;
   background-color: white;
 }
 
 .programacion h2 {
-  font-size: 2rem; /* Reduje el tamaño del título */
+  font-size: 2.5rem;
   color: #a40000;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 .contenedor-categorias {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px; /* Reduje el gap */
+  gap: 40px;
 }
 
 .categoria {
-  max-width: 100%; /* Permite que las categorías ocupen todo el ancho en móvil */
-  flex-basis: calc(50% - 20px); /* Dos columnas en pantallas más grandes */
-  margin-bottom: 20px; /* Espacio entre categorías en móvil */
-}
-
-@media (min-width: 769px) {
-  .categoria {
-      max-width: 250px; /* Vuelve al ancho original en pantallas más grandes */
-      flex-basis: auto;
-  }
+  max-width: 250px;
 }
 
 .categoria img {
@@ -174,26 +166,27 @@ body {
 }
 
 .categoria h3 {
-  margin-top: 10px; /* Reduje el margen superior */
-  font-size: 1.2rem; /* Reduje el tamaño del título */
+  margin-top: 15px;
+  font-size: 1.5rem;
   color: #a40000;
 }
 
+/* === ARTISTAS === */
 .artistas-section {
   font-family: 'Poppins', sans-serif;
 }
 
 .artistas-encabezado {
-  background-image: url('image/artist-3480274_1280.jpg');
+  background-image: url('image/artist-3480274_1280.jpg'); 
   background-size: cover;
   background-position: center;
-  padding: 80px 20px 40px; /* Ajusté el padding */
+  padding: 100px 20px 60px;
   text-align: center;
   color: white;
 }
 
 .artistas-encabezado h2 {
-  font-size: 3rem; /* Reduje el tamaño del título */
+  font-size: 3rem;
   font-weight: 900;
   margin: 0;
 }
@@ -202,31 +195,30 @@ body {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px; /* Reduje el gap */
-  padding: 40px 20px; /* Ajusté el padding */
+  gap: 40px;
+  padding: 60px 20px;
   background-color: white;
 }
 
 .artista {
   text-align: center;
-  margin-bottom: 20px; /* Espacio entre artistas en móvil */
 }
 
 .artista img {
-  width: 120px; /* Reduje el tamaño de la imagen */
-  height: 120px;
+  width: 150px;
+  height: 150px;
   border-radius: 16px;
   object-fit: cover;
 }
 
 .artista p {
-  margin-top: 10px; /* Reduje el margen superior */
-  font-size: 1.1rem; /* Reduje el tamaño del texto */
+  margin-top: 16px;
+  font-size: 1.25rem;
   font-weight: 700;
   color: #990000;
-  line-height: 1.2;
 }
 
+/* === ENTRADAS === */
 .entradas-section {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -234,24 +226,23 @@ body {
 }
 
 .entradas-banner {
-  background-image: url('image/entradas.jpg');
+  background-image: url('image/entradas.jpg'); 
   background-size: cover;
   background-position: center;
   text-align: center;
   color: white;
-  padding: 80px 20px; /* Ajusté el padding */
+  padding: 100px 20px;
 }
 
 .entradas-banner h2 {
-  font-size: 2rem; /* Reduje el tamaño del título */
+  font-size: 36px;
   font-weight: 700;
-  margin: 0;
 }
 
 .entradas-banner h1 {
-  font-size: 4rem; /* Reduje el tamaño del título principal */
+  font-size: 100px;
   font-weight: 900;
-  margin: -10px 0 0; /* Ajusté el margen superior */
+  margin: -20px 0 0;
   line-height: 1;
 }
 
@@ -259,8 +250,8 @@ body {
   background-color: #b91c1c;
   color: white;
   text-align: center;
-  padding: 20px; /* Ajusté el padding */
-  font-size: 1rem; /* Reduje el tamaño del texto */
+  padding: 30px 20px;
+  font-size: 1.25rem;
   font-weight: 500;
 }
 
@@ -269,111 +260,96 @@ body {
   text-decoration: underline;
 }
 
-.plan-viajes {
+/* === PLAN DE VIAJE === */
+.plan-viajes .titulo-seccion {
+  background-color: #a40000;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.plan-viajes .titulo-seccion h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.contenido-viaje {
   display: flex;
-  align-items: center;
-  padding: 20px;
-  background-color: #f9f9f9;
-  flex-direction: column; /* Cambié a columna por defecto para móvil */
-  text-align: center; /* Centré el texto por defecto para móvil */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 60px;
+  gap: 40px;
 }
 
-@media (min-width: 769px) {
-  .plan-viajes {
-      flex-direction: row; /* Vuelve a la disposición original en pantallas más grandes */
-      text-align: left; /* Vuelve a la alineación original en pantallas más grandes */
-  }
-
-  .contenido-plan {
-      padding-right: 20px;
-  }
-}
-
-.contenido-plan {
+.columna {
   flex: 1;
-  padding-right: 0; /* Remuevo el padding-right por defecto en móvil */
-  margin-bottom: 20px;
+  min-width: 300px;
 }
 
-.contenido-plan h2 {
-  font-size: 2em; /* Reduje el tamaño del título */
-  color: #e6492e;
+.columna h2, .columna h3 {
   margin-bottom: 10px;
 }
 
-.contenido-plan p {
-  line-height: 1.6;
-  margin-bottom: 20px;
-  color: black;
-  font-size: 1rem; /* Ajusté el tamaño de la fuente */
+.columna ul {
+  padding-left: 20px;
 }
 
-.boton-saber-mas {
-  display: inline-block;
-  background-color: #b91c1c;
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
+.columna li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.negrita {
   font-weight: bold;
-  font-size: 1rem; /* Ajusté el tamaño de la fuente */
 }
 
-.boton-saber-mas:hover {
-  background-color: #b30600;
-}
-
-.imagen-plan {
-  flex: 1;
+/* Botón volver */
+.boton-regresar {
   text-align: center;
+  margin: 40px 0;
 }
 
-.imagen-plan img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 5px;
+.btn-volver {
+  background-color: #a40000;
+  color: #fff;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
 }
 
+.btn-volver:hover {
+  background-color: #820000;
+}
+
+/* === FOOTER === */
 .footer {
-  background-color: #4a4a4a;
-  color: #f0f0f0;
-  padding: 40px 20px;
-  text-align: center; /* Centré el texto por defecto en móvil */
+  background-color: #4a4a4a; 
+  color: #f0f0f0; 
+  padding: 40px 20px; 
 }
 
 .footer-info {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin-bottom: 20px;
-  text-align: center; /* Centré el texto por defecto en móvil */
-}
-
-@media (min-width: 769px) {
-  .footer-info {
-      text-align: left; /* Vuelve a la alineación original en pantallas más grandes */
-  }
+  flex-wrap: wrap; 
+  justify-content: space-around; 
+  margin-bottom: 20px; 
 }
 
 .footer-brand,
 .footer-contact,
 .footer-social {
-  margin-bottom: 20px;
-  text-align: center; /* Centré el texto por defecto en móvil */
-  min-width: auto; /* Permite que las secciones se apilen bien */
+  margin-bottom: 20px; 
+  text-align: left; 
 }
 
-@media (min-width: 769px) {
-  .footer-brand,
-  .footer-contact,
-  .footer-social {
-      text-align: left; /* Vuelve a la alineación original en pantallas más grandes */
-      min-width: 200px; /* Ancho mínimo en pantallas más grandes */
-  }
+.footer-brand {
+  max-width: 300px; 
 }
 
 .footer-brand h3 {
-  font-size: 1.5em; /* Reduje un poco el tamaño del título */
+  font-size: 1.8em;
   margin-bottom: 10px;
 }
 
@@ -386,17 +362,14 @@ body {
 .footer-contact p {
   line-height: 1.5;
   margin-bottom: 5px;
-  font-size: 0.9rem; /* Ajusté el tamaño de la fuente */
 }
 
-.footer-contact a,
-.footer-social a {
+.footer-contact a {
   color: #f0f0f0;
   text-decoration: none;
 }
 
-.footer-contact a:hover,
-.footer-social a:hover {
+.footer-contact a:hover {
   text-decoration: underline;
 }
 
@@ -413,7 +386,6 @@ body {
 .footer-social a {
   color: #f0f0f0;
   text-decoration: none;
-  font-size: 0.9rem; /* Ajusté el tamaño de la fuente */
 }
 
 .footer-social a:hover {
@@ -422,38 +394,143 @@ body {
 
 .footer-copyright {
   text-align: center;
-  font-size: 0.8em; /* Reduje el tamaño de la fuente */
+  font-size: 0.9em;
   padding-top: 20px;
-  border-top: 1px solid #666;
+  border-top: 1px solid #666; 
 }
 
-/* Media Query para pantallas más pequeñas (hasta 768px) - Ajustes específicos */
 @media (max-width: 768px) {
-  .header-top {
-      flex-direction: column;
-      text-align: center;
-      padding: 15px;
+  .contenido-viaje {
+    flex-direction: column;
+    padding: 30px 20px;
   }
 
-  .evento-info {
-      text-align: center;
-      margin-top: 10px;
+  .footer-info {
+    flex-direction: column; 
+    text-align: center; 
   }
 
-  .navbar ul {
-      flex-direction: column;
-      align-items: center;
+  .footer-brand,
+  .footer-contact,
+  .footer-social {
+    text-align: center; 
+  }
+}
+
+/* === MEDIA QUERIES RESPONSIVE === */
+@media screen and (max-width: 768px) {
+  .contenido-viaje {
+    flex-direction: column;
+    padding: 30px 20px;
   }
 
-  .navbar li {
-      margin: 10px 0;
+  .header-top,
+  .quienes-somos,
+  .programacion,
+  .artistas-lista,
+  .entradas-banner,
+  .footer-info {
+    flex-direction: column;
+    text-align: center;
   }
 
-  .quienes-somos {
-      flex-direction: column;
+  .logo-img {
+    max-width: 100%;
   }
 
-  .artistas-lista {
-      justify-content: space-around; /* Mejor distribución en pantallas pequeñas */
+  .entradas-banner h1 {
+    font-size: 60px;
   }
+
+  .countdown h2 {
+    font-size: 2rem;
+  }
+
+  .countdown p {
+    font-size: 1.2rem;
+  }
+}
+
+
+.plan-viajes {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #f9f9f9;
+  gap: 40px;
+  flex-wrap: wrap; /* para que en móvil se adapte */
+}
+
+.contenido-plan {
+  flex: 1;
+  min-width: 300px;
+  padding-right: 20px;
+  color: black;
+}
+
+.contenido-plan h2 {
+  font-size: 2.5rem;
+  color: #a40000;
+  margin-bottom: 15px;
+}
+
+.contenido-plan p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.boton-saber-mas {
+  display: inline-block;
+  background-color: #b91c1c;
+  color: white;
+  padding: 12px 24px;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-saber-mas:hover {
+  background-color: #820000;
+}
+
+.imagen-plan {
+  flex: 1;
+  min-width: 300px;
+  text-align: center;
+}
+
+.imagen-plan img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+/* Adaptación para móviles */
+@media screen and (max-width: 768px) {
+  .plan-viajes {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .contenido-plan {
+    padding-right: 0;
+  }
+}
+
+
+
+/* Sombra suave para el texto "SOLO FALTAN" y la cuenta regresiva */
+.countdown h2,
+.countdown p {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* Sombra suave para el texto "compra tus entradas aquí" */
+/* Aquí asumo que es un enlace dentro de la sección entradas-banner */
+.entradas-banner a,
+.entradas-banner h2,
+.entradas-banner h1 {
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
