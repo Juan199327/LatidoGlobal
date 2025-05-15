@@ -1,4 +1,4 @@
-/* === ESTILOS GENERALES === */
+
 body {
   margin: 0;
   font-family: 'Arial', sans-serif;
@@ -6,7 +6,7 @@ body {
   color: #000;
 }
 
-/* === HEADER === */
+
 .header-top {
   background-color: #a40000;
   display: flex;
@@ -38,7 +38,7 @@ body {
   color: white;
 }
 
-/* === NAVBAR === */
+
 .navbar {
   background-color: #f7b500;
   text-align: center;
@@ -64,7 +64,7 @@ body {
   font-weight: bold;
 }
 
-/* === COUNTDOWN === */
+
 .countdown {
   background-size: cover;
   background-position: center;
@@ -82,7 +82,7 @@ body {
   font-size: 1.5rem;
 }
 
-/* === QUIENES SOMOS === */
+
 .quienes-somos {
   display: flex;
   flex-wrap: wrap;
@@ -130,7 +130,7 @@ body {
   line-height: 1.8;
 }
 
-/* === PROGRAMACIÓN === */
+
 .programacion {
   text-align: center;
   padding: 60px 40px;
@@ -171,7 +171,7 @@ body {
   color: #a40000;
 }
 
-/* === ARTISTAS === */
+
 .artistas-section {
   font-family: 'Poppins', sans-serif;
 }
@@ -218,7 +218,7 @@ body {
   color: #990000;
 }
 
-/* === ENTRADAS === */
+
 .entradas-section {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -260,7 +260,7 @@ body {
   text-decoration: underline;
 }
 
-/* === PLAN DE VIAJE === */
+
 .plan-viajes .titulo-seccion {
   background-color: #a40000;
   color: white;
@@ -303,7 +303,7 @@ body {
   font-weight: bold;
 }
 
-/* Botón volver */
+
 .boton-regresar {
   text-align: center;
   margin: 40px 0;
@@ -323,7 +323,7 @@ body {
   background-color: #820000;
 }
 
-/* === FOOTER === */
+
 .footer {
   background-color: #4a4a4a; 
   color: #f0f0f0; 
@@ -417,7 +417,6 @@ body {
   }
 }
 
-/* === MEDIA QUERIES RESPONSIVE === */
 @media screen and (max-width: 768px) {
   .contenido-viaje {
     flex-direction: column;
@@ -458,7 +457,7 @@ body {
   padding: 20px 40px;
   background-color: #f9f9f9;
   gap: 40px;
-  flex-wrap: wrap; /* para que en móvil se adapte */
+  flex-wrap: wrap; 
 }
 
 .contenido-plan {
@@ -506,7 +505,7 @@ body {
   border-radius: 6px;
 }
 
-/* Adaptación para móviles */
+
 @media screen and (max-width: 768px) {
   .plan-viajes {
     flex-direction: column;
@@ -521,21 +520,20 @@ body {
 
 
 
-/* Sombra suave para el texto "SOLO FALTAN" y la cuenta regresiva */
+
 .countdown h2,
 .countdown p {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
-/* Sombra suave para el texto "compra tus entradas aquí" */
-/* Aquí asumo que es un enlace dentro de la sección entradas-banner */
+
 .entradas-banner a,
 .entradas-banner h2,
 .entradas-banner h1 {
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
-/* === CORRECCIÓN DE RESPONSIVE NAVBAR Y HEADER === */
+
 @media screen and (max-width: 768px) {
   .header-top {
     flex-direction: column;
@@ -558,7 +556,7 @@ body {
   }
 }
 
-/* === CORRECCIÓN FOOTER EN MÓVIL === */
+
 @media screen and (max-width: 768px) {
   .footer-info {
     flex-direction: column;
@@ -580,7 +578,7 @@ body {
   }
 }
 
-/* === AJUSTES PARA QUE EL HEADER Y FOOTER SE VEAN BIEN EN PANTALLAS MÁS PEQUEÑAS === */
+
 @media screen and (max-width: 480px) {
   .logo-img {
     max-width: 90%;
@@ -621,8 +619,19 @@ body {
     margin-bottom: 10px;
   }
 
+
   .evento-info {
     font-size: 0.9rem;
     color: white;
   }
+}
+
+@media screen and (max-width: 768px) {
+  .artistas-encabezado h2 {
+    font-size: 2rem; 
+    word-break: break-word; 
+  }
+  .artistas-encabezado h2 {
+  margin-bottom: 20px;
+}
 }
